@@ -48,6 +48,7 @@ const promises = [createPromise(1), createPromise(2), createPromise(3)];
 // Display "Loading..." row
 const tableBody = document.getElementById('output');
 const loadingRow = document.createElement('tr');
+loadingRow.setAttribute('id', 'loading');  // Add ID to loading row
 const loadingCell = document.createElement('td');
 loadingCell.setAttribute('colspan', 2);
 loadingCell.textContent = 'Loading...';
